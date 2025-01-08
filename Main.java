@@ -5,8 +5,22 @@
 //Challenge: Add a search functionality to find books by title or author.
 
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+
+
+        List<LibraryItem> csv = CSVReader.readBooks("books.csv");
+
+
+        WriteArray.writeArrayToFile("contents.txt", csv);
+
+
+//
+//
+//        Catalogue catalogue = new Catalogue("Library catalogue");
+
 
 
     }
