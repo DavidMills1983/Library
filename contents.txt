@@ -1,0 +1,9 @@
+Title: Outsider, The, Author: Camus, Albert, id: 1, Available
+Title: Complete Sherlock Holmes, The - Vol I, Author: Doyle, Arthur Conan, id: 2, Available
+Title: Complete Sherlock Holmes, The - Vol II, Author: Doyle, Arthur Conan, id: 3, Available
+Title: Wealth of Nations, The, Author: Smith, Adam, id: 4, Available
+Title: Pillars of the Earth, The, Author: Follett, Ken, id: 5, Available
+Title: Mein Kampf, Author: Hitler, Adolf, id: 6, Available
+Title: Animal Farm, Author: Orwell, George, id: 7, Available
+Title: Idiot, The, Author: Dostoevsky, Fyodor, id: 8, Available
+Title: Christmas Carol, A, Author: Dickens, Charles, id: 9, Available
