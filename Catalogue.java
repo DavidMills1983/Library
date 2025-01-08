@@ -1,28 +1,37 @@
 import java.util.List;
 
 public class Catalogue {
-    private String name;
-    private List<LibraryItem> items;
-    private CatalogueService catalogueService;
+    private final String name;
+    private final List<LibraryItem> items;
+    private final CatalogueService catalogueService;
 
-
-    void getItem() {
-        catalogueService.getItem();
+    public Catalogue(String name) {
+        this.name = name;
+        this.items = CSVReader.getBooks();
+        this.catalogueService = new CatalogueService(this);
     }
 
-    void addItem() {
+    public String getName() {
+        return name;
+    }
+
+    public List<LibraryItem> getItems() {
+        return items;
+    }
+
+    public void addItem() {
         catalogueService.addItem();
     }
 
-    void deleteItem() {
-        catalogueService.deleteItem();
+    public void deleteItem(String id) {
+        catalogueService.deleteItem(id);
     }
 
-    void searchItem() {
-        catalogueService.searchItem();
+    public LibraryItem searchItem(String title) {
+        return catalogueService.searchItem(title);
     }
 
-    void displayAllItems() {
+    public void displayAllItems() {
         catalogueService.displayAllItems();
     }
 
