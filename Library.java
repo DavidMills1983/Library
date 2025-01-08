@@ -1,5 +1,5 @@
 public class Library {
-    private String name;
+    private final String name;
     private Catalogue catalogue;
 
     public Library(String name){
