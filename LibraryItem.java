@@ -1,18 +1,40 @@
 public abstract class LibraryItem {
 
-    private String title;
-    private String id;
+    private final String title;
+    private final String id;
     private boolean available;
 
-    abstract void makeAvailable();
+    public LibraryItem(String title, String id) {
+        this.title = title;
+        this.id = id;
+        this.available = true;
+    }
 
-    abstract void checkIfAvailable();
+    void makeAvailable(){
+        this.available = true;
+    }
 
-    abstract void getName();
+    String checkIfAvailable() {
+        if (available) return "Available";
+        else return "Not available";
+    }
 
-    abstract void getID();
 
-    abstract void displayDetails();
+    String getID() {
+        return id;
+    }
 
+    String getTitle() {
+        return title;
+    }
 
+    void displayDetails() {
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        String available = checkIfAvailable();
+        return ("Title: " + title + ", id: " + id + ", " + available);
+    }
 }
